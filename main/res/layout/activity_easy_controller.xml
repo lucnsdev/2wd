@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_3"
+        android:layout_marginStart="@dimen/margin_3"
+        android:layout_marginEnd="@dimen/margin_3">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:id="@+id/textRssi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rssi" />
+
+            <TextView
+                android:id="@+id/textRssiValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textRssi"
+                android:text="@string/zero_db"
+                android:textColor="@color/red" />
+
+            <TextView
+                android:id="@+id/textBattery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_3"
+                android:layout_toEndOf="@+id/textRssi"
+                android:text="@string/battery" />
+
+            <TextView
+                android:id="@+id/textBatteryValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textRssi"
+                android:layout_alignStart="@+id/textBattery"
+                android:text="@string/minimum_level"
+                android:textColor="@color/red" />
+
+            <TextView
+                android:id="@+id/textVelocity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_3"
+                android:layout_toEndOf="@+id/textBattery"
+                android:text="@string/speeds" />
+
+            <TextView
+                android:id="@+id/textVelocityValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textRssi"
+                android:layout_alignStart="@+id/textVelocity"
+                android:text="@string/zero" />
+
+            <TextView
+                android:id="@+id/textTx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_3"
+                android:layout_marginTop="3dp"
+                android:layout_toEndOf="@+id/textVelocity"
+                android:text="TX"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/textRx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textTx"
+                android:layout_marginStart="@dimen/margin_3"
+                android:layout_toEndOf="@+id/textVelocity"
+                android:text="RX"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/textStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" />
+        </RelativeLayout>
+
+        <ImageButton
+            android:id="@+id/buttonController"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_toStartOf="@+id/buttonSpeed"
+            android:background="@drawable/fab_transparent"
+            android:src="@drawable/icon_controller" />
+
+        <ImageButton
+            android:id="@+id/buttonSpeed"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_toStartOf="@+id/buttonConnect"
+            android:background="@drawable/fab_transparent"
+            android:src="@drawable/icon_speed" />
+
+        <ImageButton
+            android:id="@+id/buttonConnect"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/fab_transparent"
+            android:src="@drawable/icon_reconnect" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rootController"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true">
+
+        <lucns.robot2wd.views.TriangleView
+            android:id="@+id/buttonUp"
+            android:layout_width="220dp"
+            android:layout_height="110dp"
+            android:layout_above="@+id/buttonDown"
+            android:layout_marginStart="@dimen/margin_2"
+            android:layout_marginBottom="@dimen/margin_2" />
+
+        <lucns.robot2wd.views.TriangleView
+            android:id="@+id/buttonDown"
+            android:layout_width="220dp"
+            android:layout_height="110dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/margin_2"
+            android:layout_marginBottom="@dimen/margin_2" />
+
+        <lucns.robot2wd.views.TriangleView
+            android:id="@+id/buttonLeft"
+            android:layout_width="110dp"
+            android:layout_height="220dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="@dimen/margin_2"
+            android:layout_marginBottom="@dimen/margin_2"
+            android:layout_toStartOf="@+id/buttonRight" />
+
+        <lucns.robot2wd.views.TriangleView
+            android:id="@+id/buttonRight"
+            android:layout_width="110dp"
+            android:layout_height="220dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="@dimen/margin_2"
+            android:layout_marginBottom="@dimen/margin_2" />
+    </RelativeLayout>
+</RelativeLayout>
