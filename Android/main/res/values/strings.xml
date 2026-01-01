@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">2wd</string>
+    <string name="permission_denied">Denied permission!</string>
+
+    <string name="notification_small">Small</string>
+    <string name="notification_alert">Alert</string>
+    <string name="touch_to_open">Touch to open</string>
+    <string name="lights">Change Lights</string>
+    <string name="minimum_level">0%</string>
+    <string name="half_level">50%</string>
+    <string name="maximum_level">100%</string>
+    <string name="maximum_pwm">255</string>
+    <string name="zero_db">-127</string>
+    <string name="db">dbm</string>
+    <string name="zero">0</string>
+    <string name="enabled">Enabled</string>
+    <string name="disabled">Disabled</string>
+    <string name="connected">Connected</string>
+    <string name="connect">Connect</string>
+    <string name="connection">Connection</string>
+    <string name="connecting">Connecting&#8230;</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="disconnected">Disconnected</string>
+    <string name="close">Close</string>
+    <string name="rssi">Rssi</string>
+    <string name="battery">Battery</string>
+    <string name="speeds">Speeds</string>
+    <string name="choose_device">Choose a device</string>
+    <string name="enabling">Enabling</string>
+    <string name="device_not_found">Device not found</string>
+    <string name="no_devices">No devices found!</string>
+    <string name="cancel">Cancel</string>
+    <string name="canceled">Canceled</string>
+    <string name="scanning">Scanning&#8230;</string>
+    <string name="scan_completed">Scan completed</string>
+    <string name="preparing">Preparing&#8230;</string>
+    <string name="ready">Device is ready</string>
+    <string name="calibrate">Calibrate</string>
+    <string name="thousand">1000</string>
+    <string name="sent">Sent</string>
+    <string name="hide">Hide</string>
+    <string name="disabled_option">Disabled option</string>
+
+    <string name="left">Left</string>
+    <string name="right">Right</string>
+    <string name="angle">Angle</string>
+    <string name="power">Power</string>
+</resources>
